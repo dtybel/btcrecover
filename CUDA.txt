@@ -1,0 +1,46 @@
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.32.03    Driver Version: 460.32.03    CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla P100-PCIE...  Off  | 00000000:00:04.0 Off |                    0 |
+| N/A   58C    P0    29W / 250W |      0MiB / 16280MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+CUDA API (CUDA 11.2)
+====================
+* Device #1: Tesla P100-PCIE-16GB, 16025/16280 MB, 56MCU
+
+OpenCL API (OpenCL 1.2 CUDA 11.2.109) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #2: Tesla P100-PCIE-16GB, skipped
+
+CUDA API (CUDA 11.2)
+====================
+* Device #1: Tesla P100-PCIE-16GB, 16025/16280 MB, 56MCU
+
+OpenCL API (OpenCL 1.2 CUDA 11.2.109) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #2: Tesla P100-PCIE-16GB, skipped
+
+Benchmark relevant options:
+===========================
+* --workload-profile=4
+
+---------------------------------
+* Hash-Mode 10 (md5($pass.$salt))
+---------------------------------
+
+tcmalloc: large alloc 1409286144 bytes == 0x558111694000 @  0x7f4efa0d5001 0x5580e73f3726 0x5580e743c3fd 0x5580e73ea2ec 0x5580e73eab3c 0x5580e73e5aef 0x7f4ef9307c87 0x5580e73e5b4a
+Speed.#1.........:  8309.8 MH/s (224.87ms) @ Accel:64 Loops:1024 Thr:512 Vec:1
